@@ -15,3 +15,23 @@ function getRandomNumber ( firstNumber, secondNumber ) {
     
 
 } */
+
+const array = [1, 33, 55, 64, 33, 22, 10, 44];
+
+function insertElementP (content){
+    const newElement = document.createElement('p');
+    newElement.innerText = content;
+    return newElement;
+}
+
+
+ const greenDiv = document.getElementById('verde');
+ const redDiv = document.getElementById ('rosso');
+
+ for(let i=0; i < array.length; i++){
+    if (array[i] % 2 == 0){
+        greenDiv.appendChild(insertElementP(array[i]));
+    } else if (array[i] % 2 ==1){
+        redDiv.appendChild(insertElementP(array[i]));
+    }
+ }
